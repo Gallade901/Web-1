@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-1</title>
+    <link rel="shortcut icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">
+                    Черноморов Кирилл P3209
+                    <br>
+                    Вариант: 1973
+                    <hr>
+                    <br>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> 
+                    <img src="img1.png" width="350" alt="">
+                    <form method="post" action="server.php">
+                        <p> <b>Изменение X</b> </p>
+                        <p> 
+                            <input name="x" type="radio" value="-3"> -3
+                            <input name="x" type="radio" value="-2"> -2
+                            <input name="x" type="radio" value="-1"> -1
+                            <input name="x" type="radio" value="0" checked> 0
+                            <input name="x" type="radio" value="1"> 1
+                            <input name="x" type="radio" value="2"> 2
+                            <input name="x" type="radio" value="3"> 3 
+                            <input name="x" type="radio" value="4"> 4
+                            <input name="x" type="radio" value="5"> 5
+                        </p>
+                        <br>
+                        <p> <label for="input-y"><b>Изменение Y:</b></label> 
+                            <input id="input-y" name="y" value="0" type="text" placeholder="(-3; 3)" required> 
+                        </p>
+                        <p> Введите число от -3 до 3 </p>
+                        <br>
+                        <p><b>Изменение R </b></p>
+                        <p> 
+                            <input name="R" type="radio" value="1" checked> 1
+                            <input name="R" type="radio" value="2"> 2
+                            <input name="R" type="radio" value="3"> 3 
+                            <input name="R" type="radio" value="4"> 4
+                            <input name="R" type="radio" value="5"> 5
+                        </p>
+                        <br>
+                        <p>
+                            <button type="submit" id="submitBtn"> Отправить </button>
+                        </p>
+                        <p id="error"></p>
+                        <button type="button" id="clearTable"> Очистить таблицу </button>
+                    </form>
+                </td>
+                <td>
+                    <table id="resultTable">
+                        <thead>
+                            <tr>
+                                <th>X</th>
+                                <th>Y</th>
+                                <th>R</th>
+                                <th>Result</th>
+                                <th>Execute time</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>     
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="result"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

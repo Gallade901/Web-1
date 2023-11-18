@@ -1,0 +1,29 @@
+body {
+    color: #0a0921;
+    background-color: #c9ed90;
+}
+* {
+    margin: 0;
+    padding: 0;
+   }
+table {
+    text-align: center;
+    width: 100%;
+   
+}
+  td, th {
+    vertical-align: top;
+}
+thead {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: monospace;
+}
+#error {
+    color: red;
+    font-weight: bold;
+}
+button#submitBtn:hover {
+    color: #3700ff;
+    background-color: #e38500;
+}
